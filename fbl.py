@@ -258,7 +258,7 @@ def alhaj(uid,pwx,tl):
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
     'user-agent': '{' 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X) 12;  en-us; GT-L739N) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/89.0.4600.122 Mobile/15E148 Safari/605.1', 'Accept-Encoding': 'gzip, deflate', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Connection': 'keep-alive', 'authority': 'p.facebook.com', 'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8', 'cache-control': 'max-age=0', 'sec-ch-prefers-color-scheme': 'light', 'sec-ch-ua': '"Chromium";v="111", "Not(A:Brand";v="8"', 'sec-ch-ua-full-version-list': '"Chromium";v="111.0.5563.104", "Not(A:Brand";v="8.0.0.0"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform': '"Android"', 'sec-ch-ua-platform-version': '"11.0.0"', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'none', 'sec-fetch-user': '?1', 'upgrade-insecure-requests': '1'}
-    'viewport-width': '980',}
+
             lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
